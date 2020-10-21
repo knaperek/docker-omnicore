@@ -5,9 +5,9 @@ RUN set -ex \
 	&& apt-get install -qq --no-install-recommends ca-certificates wget \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV OMNI_VERSION=0.8.2
+ENV OMNI_VERSION=0.9.0
 ENV	OMNI_URL=https://github.com/OmniLayer/omnicore/releases/download/v$OMNI_VERSION/omnicore-$OMNI_VERSION-x86_64-linux-gnu.tar.gz \
-	OMNI_SHA256=13fad4537f98ab5356454436df6a808995c2c462563d4256a191fea0f10458e9
+	OMNI_SHA256=70adddaff52e597975fa5ebee1642be95664f21c7e356d5c931dc4ea8a112fb9
 
 RUN set -ex \
 	&& cd /tmp \
